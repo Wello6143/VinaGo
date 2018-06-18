@@ -16,6 +16,7 @@
     "homepage": "https://bitbucket.org/wello6143/VinaGo#readme",
     "dependencies": {
         "abp-filter-parser": "^0.2.0",
+        "chrome-tabs": "^1.0.0",
         "electron": "^2.0.2",
         "electron-builder": "^20.15.1",
         "electron-navigation": "^1.5.8",
