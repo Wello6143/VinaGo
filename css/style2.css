@@ -17,7 +17,7 @@ body, html{
   }
   
   #nav-body-tabs {
-    background: linear-gradient(whitesmoke 75%, rgba(211, 211, 211, 0.5));
+    background: url('../img/tab-bg.jpg') center no-repeat;
     height: 36px;
     font-family: 'Roboto', sans-serif;
     overflow: hidden !important;
@@ -58,7 +58,7 @@ body, html{
     font-size: 11pt;
     outline: none;
     padding-left: 8px;
-    color: #b7b7b7;
+    color: #000;
     background-color: #fff
   }
   
@@ -101,7 +101,7 @@ body, html{
     padding-left: 5px;
     font-style: normal;
     font-weight: 700;
-    color: #606060
+    color: #232323
   }
   
   .nav-tabs-title:hover {
@@ -116,7 +116,7 @@ body, html{
   }
   
   .nav-tabs-close:hover {
-    fill: #dc143c !important;
+    fill: #ff0000 !important;
   }
   
   html,

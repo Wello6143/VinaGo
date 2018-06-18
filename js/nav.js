@@ -270,14 +270,14 @@ function Navigation(options) {
     //
     this._purifyUrl = function (url) {
         if (urlRegex({
-                strict: false,
-                exact: true
-            }).test(url)) {
-            url = (url.match(/^https?:\/\/.*/)) ? url : 'http://' + url;
-        } else {
-            url = (!url.match(/^[a-zA-Z]+:\/\//)) ? 'https://www.google.com/search?q=' + url.replace(' ', '+') : url;
-        }
-        return url;
+            strict: false,
+            exact: true
+        }).test(url)) {
+        url = (url.match(/^https?:\/\/.*/)) ? url : 'http://' + url;
+    } else {
+        url = (!url.match(/^[a-zA-Z]+:\/\//)) ? 'https://www.google.com/search?q=' + url.replace(' ', '+') : url;
+    }
+    return url;
     } //:_purifyUrl()
     //
     // set the color of the tab based on the favicon
