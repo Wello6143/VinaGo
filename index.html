@@ -21,7 +21,8 @@
     <div id="nav-body-ctrls" style="overflow-y: hidden;"></div>
     <div id="nav-body-views" style="height: 89%;"></div>
     <script>
-        const enav = new (require('electron-navigation'))();
+        const enav = new (require('./js/nav.js'))();
+        enav.newTab('./newtab.html');
     </script>
 </body>
 </html>

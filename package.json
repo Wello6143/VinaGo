@@ -19,9 +19,7 @@
         "chrome-tabs": "^1.0.0",
         "electron": "^2.0.2",
         "electron-builder": "^20.15.1",
-        "electron-navigation": "^1.5.8",
         "electron-squirrel-startup": "^1.0.0",
-        "electron-tabs": "^0.9.1",
         "electron-toolkit": "^1.0.24",
         "modclean": "^3.0.0-beta.1"
     },
