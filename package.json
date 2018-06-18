@@ -1,0 +1,56 @@
+{
+    "name": "vinago",
+    "version": "0.1.0",
+    "description": "VinaGo - Một trình duyệt nhanh và cực kỳ đơn giản cho người Việt. Đáp ứng nhu cần duyệt web cơ bản nhất của người dùng.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "electron-toolkit": "electron ./node_modules/electron-toolkit"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://wello6143@bitbucket.org/wello6143/vinago.git"
+    },
+    "author": "Wello6143",
+    "license": "GPL-3.0",
+    "homepage": "https://bitbucket.org/wello6143/VinaGo#readme",
+    "dependencies": {
+        "abp-filter-parser": "^0.2.0",
+        "electron": "^2.0.2",
+        "electron-builder": "^20.15.1",
+        "electron-navigation": "^1.5.8",
+        "electron-squirrel-startup": "^1.0.0",
+        "electron-tabs": "^0.9.1",
+        "electron-toolkit": "^1.0.24",
+        "modclean": "^3.0.0-beta.1"
+    },
+    "devDependencies": {
+        "electron-packager": "^12.1.0"
+    },
+    "keywords": [
+        "browser",
+        "fast",
+        "simplest"
+    ],
+    "build": {
+        "appId": "ga.aeronstek.vinago",
+        "copyright": "AeronsTek. 2018",
+        "productName": "VinaGo Browser",
+        "electronVersion": "2.0.2",
+        "asar": true,
+        "directories": {
+            "app": "F:\\Projects\\VinaGo",
+            "output": "dist"
+        },
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
+        }
+    }
+}

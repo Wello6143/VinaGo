@@ -1,0 +1,14 @@
+﻿/*Bạn đang kiếm cái gì ở đây :D?
+What are you looking for :D?*/
+input{
+    color: white;
+    background-color: aliceblue;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+h4{
+    color: #00d77d;
+}
