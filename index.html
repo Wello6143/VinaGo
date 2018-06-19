@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
+    <script src="js/window.js"></script>
     <style>
     @font-face{
         font-family: 'Roboto';
@@ -17,12 +18,18 @@
         font-family: 'Roboto', sans-serif;
     }
     </style>    
-    <div id="nav-body-tabs" style="overflow-y: hidden;"></div>
+    <div id="nav-body-tabs" style="overflow-y: hidden;">
+        <div id="title-bar-btns">
+            <button id="min-btn">-</button>
+            <button id="max-btn">+</button>
+            <button id="close-btn">x</button>
+        </div>
+    </div>
     <div id="nav-body-ctrls" style="overflow-y: hidden;"></div>
     <div id="nav-body-views" style="height: 89%;"></div>
     <script>
         const enav = new (require('electron-navigation'))();
-        enav.newTab('');
+        enav.newTab('vinago.ga');
     </script>
 </body>
 </html>

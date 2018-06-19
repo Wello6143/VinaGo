@@ -3,7 +3,7 @@ const {app, BrowserWindow} = require('electron')
   let win
   const Menu = electron.Menu;
   function createWindow () {
-    win = new BrowserWindow({width: 1024, height: 768, icon: __dirname +  './img/logo.png'})
+    win = new BrowserWindow({width: 1024, height: 768, frame: false, icon: __dirname +  './img/logo.png'})
     const menuTemplate = [
         {
             label: 'Tùy chọn',
