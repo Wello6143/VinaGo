@@ -1,3 +1,4 @@
+/*Các line ở đây được tập hợp từ nhiều nguồn và tác giả tự viết, chỉnh sửa. Hiện tại file khá lộn xộn nhưng có một sự ngăn nắp nhất định*/
 body, html{
   height: 100%;
   width: 100%;
@@ -16,6 +17,9 @@ body, html{
   padding: 8px;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #e4e4e4;
+}
+#nav-body-ctrls input{
+  font-family: 'Roboto', sans-serif;
 }
 #nav-body-tabs{
   background: transparent;
@@ -56,7 +60,8 @@ body, html{
   outline: none;
   padding-left: 8px;
   color: #000;
-  background-color: #fff
+  background-color: #fff;
+  width: 85%
 }
 #nav-ctrls-url:focus{
   color: #303030;
@@ -143,13 +148,4 @@ html, body{
   border: none;
   width: 25px;
   height: 15px;
-}
-#min-png:hover{
-  background-color: #8c8c8c
-}
-#max-png:hover{
-  background-color: #8c8c8c
-}
-#close-png:hover{
-  background-color: #8c8c8c
 }
