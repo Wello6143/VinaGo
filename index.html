@@ -10,19 +10,31 @@
 <body>
     <script src="js/window.js"></script>
     <style>
-    @font-face{
-        font-family: 'Roboto';
-        src: url('font/Roboto.ttf');
+    img{
+        width: 25px;
+        height: 25px;
+        text-align: center;
     }
-    html, body{
-        font-family: 'Roboto', sans-serif;
+    #min-btn, #max-btn, #close-btn{
+        outline: none;
+        align-content: left;
+        margin: auto 5px;
     }
-    </style>    
-    <div id="nav-body-tabs" style="overflow-y: hidden;">
-        <div id="title-bar-btns">
-            <button id="min-btn">-</button>
-            <button id="max-btn">+</button>
-            <button id="close-btn">x</button>
+    #logo{
+        width: 36px;
+        height: 36px;
+        background: url('img/logo.png') center no-repeat;
+        background-size: 30px;
+    }
+    </style>
+    <div id="top">    
+        <div id="nav-body-tabs" style="overflow-y: hidden;">
+            <div id="logo"></div>
+            <div id="title-bar-btns">
+                <button id="min-btn"><img id="min-png" src="img/min.png"></button>
+                <button id="max-btn"><img id="max-png" src="img/max.png"></button>
+                <button id="close-btn"><img id="close-png" src="img/close.png"></button>
+            </div>
         </div>
     </div>
     <div id="nav-body-ctrls" style="overflow-y: hidden;"></div>
