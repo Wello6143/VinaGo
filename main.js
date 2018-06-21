@@ -1,6 +1,5 @@
 const electron = require('electron')
 const {app, BrowserWindow} = require('electron')
-var electronInstaller = require('electron-winstaller');
   let win
   const Menu = electron.Menu;
   function createWindow () {
