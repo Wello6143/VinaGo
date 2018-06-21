@@ -35,6 +35,10 @@
     <script>
         const enav = new (require('electron-navigation'))();
         enav.newTab('vinago.ga');
+        let ABPFilterParser = require('abp-filter-parser');
+        var fs = require('fs');
+        let easyListTxt = fs.readFileSync('./node_modules/abp_filter_parser/test/data/easylist.txt', 'utf-8');
+        let parsedFilterData = {};
     </script>
 </body>
 </html>
