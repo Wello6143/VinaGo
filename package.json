@@ -1,7 +1,8 @@
 {
     "build": {
         "appId": "ga.aerons.vinago",
-        "productName": "Trình duyệt VinaGo"
+        "productName": "Trình duyệt VinaGo",
+        "icon": "./img/icon.ico"
     },
     "name": "vinago",
     "version": "0.1.1",
