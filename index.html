@@ -9,6 +9,7 @@
 </head>
 <body>
     <script src="js/window.js"></script>
+    <script src="js/main.js"></script>
     <style>
     img{
         width: 25px;
@@ -31,14 +32,10 @@
         </div>
     </div>
     <div id="nav-body-ctrls" style="overflow-y: hidden;"></div>
-    <div id="nav-body-views" style="height: 89%;"></div>
+    <div id="nav-body-views" style="height: 90%;"></div>
     <script>
         const enav = new (require('electron-navigation'))();
         enav.newTab('google.com');
-        let ABPFilterParser = require('abp-filter-parser');
-        var fs = require('fs');
-        let easyListTxt = fs.readFileSync('./node_modules/abp_filter_parser/test/data/easylist.txt', 'utf-8');
-        let parsedFilterData = {};
     </script>
 </body>
 </html>

@@ -41,3 +41,4 @@ VinaGo-win32-x64/
 .vscode/
 node_modules/
 dist/
+!node_modules/electron-navigator/**

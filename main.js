@@ -1,9 +1,30 @@
 const electron = require('electron')
 const {app, BrowserWindow} = require('electron')
+const DownloadManager = require("electron-download-manager")
   let win
   const Menu = electron.Menu;
   function createWindow () {
     win = new BrowserWindow({width: 1024, height: 768, frame: false, icon: __dirname +  './img/logo.png'})
+    win.webContents.session.on('will-download', (event, item, webContents) => {
+      item.on('updated', (event, state) => {
+        if (state === 'interrupted') {
+          console.log('Quá trình tải bị gián đoạn, nhưng có thể tiếp tục')
+        } else if (state === 'progressing') {
+          if (item.isPaused()) {
+            console.log('Quá trình tải bị tạm dừng')
+          } else {
+            console.log(`Đã nhận được: ${item.getReceivedBytes()} bytes`)
+          }
+        }
+      })
+      item.once('done', (event, state) => {
+        if (state === 'completed') {
+          console.log('Tải về thành công!')
+        } else {
+          console.log(`Tải về không thành công: ${state}`)
+        }
+      })
+    })
     const menuTemplate = [
         {
             label: 'Tùy chọn',
