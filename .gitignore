@@ -39,6 +39,6 @@ Thumbs.db
 #Folders#
 VinaGo-win32-x64/
 .vscode/
-node_modules/
 dist/
-!node_modules/electron-navigator/**
+node_modules/
+!node_modules/electron-navigation/**
