@@ -1,6 +1,5 @@
 const electron = require('electron')
 const {app, BrowserWindow} = require('electron')
-const DownloadManager = require("electron-download-manager")
   let win
   const Menu = electron.Menu;
   function createWindow () {

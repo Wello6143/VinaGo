@@ -34,8 +34,12 @@
     <div id="nav-body-ctrls" style="overflow-y: hidden;"></div>
     <div id="nav-body-views" style="height: 90%;"></div>
     <script>
-        const enav = new (require('electron-navigation'))();
-        enav.newTab('google.com');
+        const enav = new (require('electron-navigation'))({
+          newTabCallback: (url, options) => {
+            url = 'file:///newtab.html';
+            return {url};
+          }
+        });
     </script>
 </body>
 </html>
