@@ -1,6 +1,4 @@
-﻿/*Bạn đang kiếm cái gì ở đây :D?
-What are you looking for :D?*/
-input{
+﻿input{
     color: white;
     background-color: aliceblue;
 }
@@ -11,4 +9,7 @@ body, html{
 }
 h4{
     color: #00d77d;
+}
+.footer{
+    bottom: 0;
 }
