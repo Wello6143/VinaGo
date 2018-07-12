@@ -23,7 +23,7 @@
     }
     </style>
     <div id="top">    
-        <div id="nav-body-tabs" style="overflow-y: hidden;">
+        <div id="nav-body-tabs" style="overflow-y: hidden; background-color: transparent !important;">
             <div id="title-bar-btns">
                 <button id="min-btn"><img id="min-png" src="img/min.png"></button>
                 <button id="max-btn"><img id="max-png" src="img/max.png"></button>
@@ -34,13 +34,8 @@
     <div id="nav-body-ctrls" style="overflow-y: hidden;"></div>
     <div id="nav-body-views" style="height: 90%;"></div>
     <script>
-        const enav = new (require('electron-navigation'))({
-            defaultFavicons: true,
-            newTabCallback: (url, options) => {
-                url = 'file:///newtab.html';
-                return {url};
-            }
-        });
+        const enav = new (require('electron-navigation'))();
+        enav.newTab('https://searchkit.ga');
     </script>
 </body>
 </html>
