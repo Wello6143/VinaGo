@@ -10,11 +10,11 @@ body, html{
   src: url('../font/Roboto.ttf');
 }
 #top{
-  background: linear-gradient(90deg, #00d77d, #3498DB);
+  background: rgba(255, 255, 255, 0.6);
   user-select: none;
 }
 #nav-body-ctrls{
-  background-color: transparent;
+  background-color: #fff;
   padding: 8px;
   font-family: 'Roboto', sans-serif;
 }
