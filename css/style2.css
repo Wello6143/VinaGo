@@ -10,7 +10,7 @@ body, html{
   src: url('../font/Roboto.ttf');
 }
 #top{
-  background: rgba(140, 140, 140, 0.8);
+  background: rgba(140, 140, 140, .9);
   user-select: none;
 }
 #nav-body-ctrls{
@@ -33,6 +33,7 @@ body, html{
   max-width: 100vw;
   -webkit-app-region: drag;
   padding: none;
+  
 }
 #nav-body-views{
   flex: 1;
@@ -52,22 +53,22 @@ body, html{
   margin-right: 10px;
 }  
 #nav-ctrls-url{
-  box-shadow: 0 0 5px #e4e4e4;
+  box-shadow:  5px 5px #ebebeb;
   border: 0px;
   border-radius: 20px;
   height: 30px!important;
   margin-left: 8px;
-  font-size: 11pt;
+  font-size: 15px;
   outline: none;
   padding-left: 8px;
   color: #000;
   background: #dbdbdb;
   width: 80%;
-  box-shadow: 0 0
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #nav-ctrls-url:focus{
   color: #303030;
-  box-shadow: 0 0
 }
 #nav-tabs-add{
   margin: 5px;
@@ -78,7 +79,7 @@ body, html{
   fill: #fff !important;
 }
 .nav-tabs-tab{
-  border-radius: 6px;
+  border-radius: 5px;
   height: 35px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
